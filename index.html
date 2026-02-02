@@ -4,25 +4,68 @@
   <meta charset="UTF-8">
   <title>B-ECO Fuel Tabs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- GOOGLE VERIFY (AGAR KERAK BO‘LSA) -->
-  <!-- <meta name="google-site-verification" content="KOD_BU_YERGA" /> -->
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
+<header>
   <div class="logo">B-ECO</div>
-  <nav class="lang">
-    <button>UZ</button>
-    <button>RU</button>
-    <button>KZ</button>
-  </nav>
+  <div class="lang">
+    <button onclick="setLang('uz')">UZ</button>
+    <button onclick="setLang('kz')">KZ</button>
+    <button onclick="setLang('ru')">RU</button>
+  </div>
 </header>
 
 <section class="hero">
-  <div class="overlay"></div>
+  <div class="hero-text">
+    <h1 id="title"></h1>
+    <p id="desc"></p>
 
-  <div class="hero-content">
-    <
+    <div class="actions">
+      <a id="callBtn" class="btn call">📞 Qo‘ng‘iroq</a>
+      <a id="waBtn" class="btn wa" target="_blank">💬 WhatsApp</a>
+      <a id="igBtn" class="btn ig" target="_blank">📸 Instagram</a>
+    </div>
+  </div>
+
+  <img src="assets/fuel-tabs.jpg" alt="Fuel Tabs">
+</section>
+
+<section class="faq">
+  <h2 id="faqTitle"></h2>
+
+  <div class="qa">
+    <h3 id="q1"></h3>
+    <p id="a1"></p>
+  </div>
+  <div class="qa">
+    <h3 id="q2"></h3>
+    <p id="a2"></p>
+  </div>
+  <div class="qa">
+    <h3 id="q3"></h3>
+    <p id="a3"></p>
+  </div>
+  <div class="qa">
+    <h3 id="q4"></h3>
+    <p id="a4"></p>
+  </div>
+  <div class="qa">
+    <h3 id="q5"></h3>
+    <p id="a5"></p>
+  </div>
+</section>
+
+<section class="business">
+  <h2 id="bizTitle"></h2>
+  <p id="bizDesc"></p>
+</section>
+
+<footer>
+  © 2026 Fuel Tabs — <b>Bahrom Furkatov</b>, sayt boshligi
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
